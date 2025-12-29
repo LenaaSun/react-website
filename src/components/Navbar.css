@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* --- NAVBAR --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(239, 233, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+/* Inner container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;                /* ⬅️ slightly wider so the logo sits closer to edge */
+  max-width: 1400px;
+}
+
+/* Logo on the far left */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 0;            /* remove spacing on the left */
+}
+
+/* BIGGER LOGO */
+.logo-img {
+  height: auto;
+  width: 300px;              /* ⬅️ make the logo large */
+  user-select: none;
+  -webkit-user-drag: none;
+  object-fit: contain;
+}
+
+/* --- NAV LINKS (right side) --- */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-right: 200px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  color: #4a3a55;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-links:hover {
+  color: #7a4ebc;
+}
+
+/* Optional button */
+.btn {
+  margin-left: 20px;
+}
+
+/* Prevent page content from hiding behind navbar */
+body {
+  padding-top: 80px;
+}
