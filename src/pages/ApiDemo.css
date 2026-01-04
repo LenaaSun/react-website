@@ -1,3 +1,23 @@
-.page {
-  padding: 2rem;
+.page { padding: 16px; }
+
+.controls { margin-bottom: 12px; }
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
 }
+
+.error { color: #a00; margin-top: 8px; }
+
+.response-list { list-style: none; padding: 0; }
+
+.response-list li {
+  background: #f7f7f7;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
+
+.empty { color: #666; font-style: italic; }
+/* ...existing code... */
