@@ -1,4 +1,27 @@
-.page { padding: 16px; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.page {
+  padding: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title-card {
+  background: rgb(239, 233, 241); /* same family as navbar */
+  padding: 24px 32px;
+  border-radius: 14px;
+  margin-bottom: 28px;
+  box-shadow: 0 6px 18px rgba(80, 60, 120, 0.12);
+}
+
+.title-card h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #3d2c5a; /* deep muted violet */
+  letter-spacing: -0.4px;
+}
 
 .controls { margin-bottom: 12px; }
 
@@ -11,6 +34,10 @@ button {
 
 .response-list { list-style: none; padding: 0; }
 
+.response-list {
+  font-family: 'Poppins', sans-serif;
+}
+
 .response-list li {
   background: #f7f7f7;
   margin-bottom: 8px;
@@ -20,4 +47,5 @@ button {
 }
 
 .empty { color: #666; font-style: italic; }
-/* ...existing code... */
+
+

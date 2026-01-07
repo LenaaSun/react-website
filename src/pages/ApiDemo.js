@@ -1,4 +1,3 @@
-// ...existing code...
 import React, { useState, useEffect } from "react";
 import "./ApiDemo.css";
 import SongCard from "../components/SongCard";
@@ -48,8 +47,9 @@ function ApiDemo() {
 
   return (
     <div className="page">
+    <div className="title-card">
       <h1>Random Song Finder</h1>
-
+    </div>
       <div className="controls">
         <Select 
           options={options} 
