@@ -14,7 +14,7 @@ function ApiDemo() {
   useEffect(() => {
     const fetchGenres = async () => {
       try {
-        const res = await fetch("http://localhost:3000/get-genres");
+        const res = await fetch("/api/get-genres");
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
         const genreOptions = data.genres.map((g) => ({
@@ -34,7 +34,7 @@ function ApiDemo() {
     setError(null);
     setSong(null);
     try {
-      const res = await fetch(`http://localhost:3000/get-random-song-by-genre?genre=${encodeURIComponent(genre.value)}`);
+      const res = await fetch(`/api/get-random-song-by-genre?genre=${encodeURIComponent(genre)}`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       setSong(data);
