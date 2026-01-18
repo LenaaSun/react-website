@@ -34,7 +34,7 @@ function ApiDemo() {
     setError(null);
     setSong(null);
     try {
-      const res = await fetch(`/api/get-random-song-by-genre?genre=${encodeURIComponent(genre)}`);
+      const res = await fetch(`/api/get-random-song-by-genre?genre=${encodeURIComponent(genre.value)}`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       setSong(data);
